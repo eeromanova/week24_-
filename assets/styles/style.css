@@ -1,0 +1,73 @@
+body {
+  margin: auto;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width: 90%;
+  background-color: rgb(3, 3, 57);
+}
+.header {
+  font-size: 25px;
+  text-align: center;
+  color: white;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.cardContainer{
+  background-color: rgb(240, 252, 252);
+  border-radius: 10px;
+  border: none;
+}
+.cardContainer:hover{
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+.cardHeader{
+  font-size: 16px;
+  text-align: center;
+}
+.cardText{
+  font-size: 10px;
+  text-align: center;
+  margin: 2px auto;
+}
+.cardImage{
+  width: 100%;
+}
+.checkboxContainer{
+  display: flex;
+  gap:2px;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.checkbox{
+  opacity: 0;
+  z-index: 1;
+  position: absolute;
+
+}
+.star{
+  position: relative;
+  right: 6px;
+  bottom: 6px;
+  fill:rgb(179, 178, 178);
+}
+.star:hover{
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.star__yellow{
+  position: relative;
+  right: 6px;
+  bottom: 6px;
+  fill:rgb(249, 229, 93);
+}
+
+  .nonactive{
+    display: none;
+  }
